@@ -1,6 +1,8 @@
-# AppComponentFactory
+# App Component Factory
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+Application to explain dynamic Angular component injection.
+
+> This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
 
