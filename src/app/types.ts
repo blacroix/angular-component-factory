@@ -4,4 +4,5 @@ export interface DynamicComponent {
 
 export interface DynamicComponentData {
   type: string;
+  content: any;
 }

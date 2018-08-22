@@ -23,8 +23,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     // Get data from CMS
     const dynamicComponentsData: DynamicComponentData[] = [
-      {type: 'componentA'},
-      {type: 'componentB'},
+      {type: 'componentA', content: {}},
+      {type: 'componentB', content: {}},
     ];
     let factory: ComponentFactory<DynamicComponent> = null;
     for (const data of dynamicComponentsData) {
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
           break;
       }
       if (factory) {
-        const component = this.anchorFactory.viewContainerRef.createComponent(factory).instance as DynamicComponent;
+        const component = this.anchorFactory.viewContainerRef.createComponent(factory).instance;
         component.data = data;
       }
     }
